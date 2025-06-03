@@ -1,111 +1,97 @@
-# Mon-cv<!DOCTYPE html>
+# Mon-cv
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Formulaire Stylisé</title>
-  <style>
-    body {
-      background-color: #f0f4f8;
-      font-family: Arial, sans-serif;
-    }
-
-    form {
-      background-color: #ffffff;
-      width: 350px;
-      margin: 50px auto;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    h2 {
-      text-align: center;
-      color: #333;
-    }
-
-    label {
-      display: block;
-      margin-top: 15px;
-      font-weight: bold;
-      color: #333;
-    }
-
-    input[type="text"],
-    input[type="password"] {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      box-sizing: border-box;
-    }
-
-    .genre-options {
-      margin-top: 10px;
-    }
-
-    .genre-options input {
-      margin-right: 5px;
-    }
-
-    .buttons {
-      margin-top: 20px;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    button {
-      width: 48%;
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    button[type="submit"] {
-      background-color: #4CAF50;
-      color: white;
-    }
-
-    button[type="reset"] {
-      background-color: #f44336;
-      color: white;
-    }
-
-    button:hover {
-      opacity: 0.9;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>CV - FENYO TAGNE MEGANE KELIA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        
+        .photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 30px;
+            object-fit: cover;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+    </style>
 </head>
 <body>
-
-  <form action="#" method="post">
-    <h2>Formulaire</h2>
-
-    <label for="nom">Nom *</label>
-    <input type="text" id="nom" name="nom" required>
-
-    <label for="prenom">Prénom *</label>
-    <input type="text" id="prenom" name="prenom" required>
-
-    <label>Genre *</label>
-    <div class="genre-options">
-      <input type="radio" id="masculin" name="genre" value="masculin" required>
-      <label for="masculin" style="display:inline;">Masculin</label>
-
-      <input type="radio" id="feminin" name="genre" value="feminin" required>
-      <label for="feminin" style="display:inline;">Féminin</label>
+    <div class="header">
+        <img src="chemin/vers/photo.jpg" alt="Photo d'identité" class="photo">
+        <div>
+            <h1>FENYO TAGNE MEGANE KELIA </h1>
+            <p>Âge : 19 ans</p>
+        </div>
     </div>
 
-    <label for="password">Mot de passe *</label>
-    <input type="password" id="password" name="password" required>
-
-    <div class="buttons">
-      <button type="submit">Valider</button>
-      <button type="reset">Annuler</button>
+    <div class="section">
+        <h2>Formation</h2>
+        <ul>
+            <li>Baccalauréat série C (2023) - Lycée d'Oyack</li>
+            <li>Programmeur en informatique - Université de Douala, Faculté des Sciences (en cours)</li>
+        </ul>
     </div>
-  </form>
 
+    <div class="section">
+        <h2>Compétences Techniques</h2>
+        <ul>
+            <li>Développement web (HTML, CSS)</li>
+            <li>Programmation Python</li>
+            <li>Algorithmique et structures de données</li>
+            <li>Bases de données SQL</li>
+            <li>Suite Office (Word, Excel, PowerPoint)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Langues</h2>
+        <ul>
+            <li>Français - Langue maternelle</li>
+            <li>Anglais - Niveau intermédiaire</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Centres d'intérêt</h2>
+        <ul>
+            <li>Développement de logiciels</li>
+            <li>Veille technologique</li>
+            <li>Robotique</li>
+            <li>Lecture scientifique</li>
+        </ul>
+    </div>
 </body>
 </html>
+
